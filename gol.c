@@ -206,7 +206,7 @@ int main(int argc,char** argv){ // main has to take an int (no. of args) & a cha
             if (++frame>frameSkip) usleep(1e6/fps); // skip frame delay for first n frames
             printf("\033[%uA",(h+1)/2); // move cursor back to start for next frame to overwrite previous
         }
-        break;
+        // break; // uncomment this line for it to run just once
         printf("\033[%uA",(h+1)/2); // move cursor back to start for next game
     }
     printf("\033[?25h"); // show cursor
